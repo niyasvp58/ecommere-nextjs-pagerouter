@@ -10,9 +10,9 @@ const Success = () => {
         <h1 className='text-8xl font-bold'>Thank You</h1>
         <p className='text-center text-2xl'>Order Placed Successfully</p>
 
-        <a href="/">
+        <Link href="/">
           <p className=''>Continue Shopping</p>
-        </a>
+        </Link>
 
       </div>
 

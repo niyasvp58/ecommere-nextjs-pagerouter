@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../contextcart/contextcart";
 import Link from "next/link";
+import Image from "next/image";
 
 export const CartItem = (props: { products: any }) => {
   const product = props.products;
@@ -19,7 +20,7 @@ export const CartItem = (props: { products: any }) => {
     <div className="cardlist">
       <div className="card">
         <div className="product">
-          <img src={product.image.url} style={{height:'250px',width:"250px"}} alt={product.name} />
+          <Image src={product.image.url} style={{height:'250px',width:"250px"}} alt={product.name} />
           <div className="description">
             <Link href={'/productlist/' + product.id} ><p>{product.name}</p></Link>
              <p> ${product.price.raw}</p>
