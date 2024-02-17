@@ -2,7 +2,6 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import { ShopContext } from '../contextcart/contextcart';
-import Image from 'next/image';
 
 interface Product {
   id: any;
