@@ -1,0 +1,13 @@
+.cardlist{
+    display: inline-flex;
+}
+.card{
+    height: 370px;
+    width: 300px;
+    margin: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px 10px gray;
+}
