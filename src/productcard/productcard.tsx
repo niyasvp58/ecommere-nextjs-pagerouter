@@ -35,7 +35,7 @@ export default function Productcard(props: Props) {
   return (
     <div className="cardlist">
       <div className="card">
-        <div><Image alt='productcard' src={product.image.url} width={250} height={250} style={{height:'250px',width:"250px"}} /></div>
+        <div><img alt='productcard' src={product.image.url} width={250} height={250} style={{height:'250px',width:"250px"}} /></div>
         <div><Link href={'/productlist/' + product.id}> {product.name} </Link></div>
         <div>{product.price.raw}</div>
         <div>{product.seo.description}</div>

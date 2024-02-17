@@ -1,10 +1,10 @@
 'use client'
-import React, { useContext } from "react";
+import  React,{ useContext } from "react";
 import { ShopContext } from "../contextcart/contextcart";
 import Link from "next/link";
 import Image from "next/image";
 
-export const CartItem = (props: { products: any }) => {
+export const CartItem : React.FC<{ products: any }> =(props) => {
   const product = props.products;
   const context = useContext(ShopContext);
 
@@ -20,7 +20,7 @@ export const CartItem = (props: { products: any }) => {
     <div className="cardlist">
       <div className="card">
         <div className="product">
-          <Image src={product.image.url} style={{height:'250px',width:"250px"}} alt={product.name} />
+          <img src={product.image.url} style={{height:'250px',width:"250px"}} alt={product.name} />
           <div className="description">
             <Link href={'/productlist/' + product.id} ><p>{product.name}</p></Link>
              <p> ${product.price.raw}</p>
@@ -34,3 +34,5 @@ export const CartItem = (props: { products: any }) => {
     </div>
   );
 };
+
+

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import { Productdata, getproduct } from '../data/data'
-import Productcard from '../productcard/productcard';
+import { Productdata, getproduct } from '../../data/data'
+import Productcard from '../../productcard/productcard';
 
 interface product{
     id: any;

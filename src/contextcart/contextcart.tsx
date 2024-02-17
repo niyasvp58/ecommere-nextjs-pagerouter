@@ -1,6 +1,6 @@
 'use client'
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { Productdata, getproduct } from "../data/data";
+import { getproduct } from "../data/data";
 
 interface CartItems {
   [key: number]: number;

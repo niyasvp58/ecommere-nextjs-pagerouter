@@ -1,8 +1,8 @@
 'use client'
 import React, { useContext, useEffect, useState } from "react";
-import { CartItem } from "./cartitem";
-import { ShopContext } from "../contextcart/contextcart";
-import { Productdata, getproduct } from "../data/data";
+import { CartItem } from "../../cartitem/cartitem";
+import { ShopContext } from "../../contextcart/contextcart";
+import { Productdata, getproduct } from "../../data/data";
 import Checkout from "../checkout/checkout";
 
 interface Product {
